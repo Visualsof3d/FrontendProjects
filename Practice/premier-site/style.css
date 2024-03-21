@@ -446,7 +446,7 @@ nav h2:nth-last-child(2) {
     transition: all ease 0.7s;
 }
 .up-elem:nth-child(2n) img {
-    left: 33%;
+    left: 26%;
 }
 .up-elem:nth-child(2n):hover img {
     left: 15%;
@@ -464,7 +464,247 @@ nav h2:nth-last-child(2) {
     font-size: 1.2vw;
 }
 
-#page {
+
+#movie-shot {
     width: 100%;
     height: 110%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4.5vw 4vw 3vw 4vw;
+    
+}
+
+#movie-p1 {
+    width: 50%;
+    height: 100%;
+    background-color: darkgoldenrod;
+}
+#movie-p1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#movie-p2 {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#movie-p2 h1 {
+    font-family: monument;
+    font-size: 2.8vw;
+}
+#movie-p2 h3 {
+    width: 54%;
+    font-size: 1.5vw;
+}
+
+#movie-p2 h5 {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+
+#movie-shot-img {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#movie-shot-img img:nth-child(1) {
+    width: 55%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#movie-shot-img img:nth-last-child(1) {
+    width: 41%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#infinite-text {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#marque {
+    height: 35%;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    white-space: nowrap;
+    
+}
+
+#marque h1{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 3.3vw;
+    font-family: monument;
+    -webkit-text-stroke: 1.5px rgb(32, 32, 32);
+    color: transparent;
+    letter-spacing: 7px;
+    animation: marqueAnimation linear infinite 7s;
+}
+
+@keyframes marqueAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+
+#blog {
+    width: 100%;
+    height: 100%;
+    padding: 3vw 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#blog>h1 {
+    width: 20%;
+    height: 100%;
+    font-family: monument;
+    font-size: 2.8vw;
+}
+
+.blog-p1 {
+    width: 35%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upper-part {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    line-height: 2.4vw;
+}
+
+.upper-part h5 {
+    height: fit-content;
+    font-size: 1.3vw;
+    font-weight: 400;
+    padding: 0.1vw 1vw;
+    border-radius: 50%;
+    border: 1.5px solid black;
+    margin-right: 1.4vw;
+}
+
+.upper-part h4 {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.lower-part {
+    width: 100%;
+    height: 65%;
+}
+
+.lower-part img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+footer {
+    width: 100%;
+    height: 45%;
+    margin-top: 5vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: grid;
+    grid-template-columns: 21% 18% 18% 43%;
+    grid-template-rows: 32% 68%;
+}
+
+
+footer h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    font-size: 2.6vw;
+    letter-spacing: -2.2px;
+}
+footer h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 1.4vw;
+    font-weight: 500;
+    word-spacing: 1px;
+}
+
+footer h3 {
+    display: flex;
+    align-items: center;
+    padding-left: 4vw;
+    border-right: 2px solid black;
+    font-size: 1.4vw;
+    font-weight: 500;
+    word-spacing: 1px;
+    border-right: none;
+    border-bottom: 2px solid black;
+}
+
+#footer-box1 {
+    grid-row: 2;
+    grid-column: 1 / 3;
+    border-right: 2px solid black;
+}
+#footer-box2 {
+    grid-column: 3;
+    grid-row: 2;
+    border-right: 2px solid black;
+}
+
+#socials {
+    grid-row: 2;
+    grid-column: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 4vw;
+}
+
+#social-icon {
+    display: flex;
+    gap: 2vw;
+}
+
+#social-icon i{
+    font-size: 2vw;
+    color: #454545;
+}
+
+#socials h5 {
+    font-size: 1.1vw;
+    font-weight: 500;
+    width: 70%;
+}
+
+#page {
+    width: 100%;
+    height: 30px;
 }
